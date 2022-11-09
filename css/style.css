@@ -3,3 +3,74 @@
     padding:0;
     box-sizing: border-box;
 }
+
+#main-title.styling-h1.text-red{
+    font-style: italic;
+    color: red;
+}
+
+input[type="email"]{
+    color:red;
+    font-size:20px;
+}
+/* sul text non funziona perchè ho specificato email */
+
+.hover-class:hover{
+    color:yellow;
+    background-color: lightblue;
+    cursor:pointer;
+}
+
+input:focus{
+    color:green;
+}
+
+button:active{
+    background-color: pink;
+    font-size:30px;
+}
+
+a:visited{
+    color:aqua;
+}
+
+ul li:first-child{
+    color:red;
+}
+ul li:last-child{
+    color:blue;
+}
+ul li:nth-child(3){
+    color:darkgoldenrod;
+}
+
+
+/* sto selezionando tutti i p 
+fratelli adiacenti di un altro p, 
+solo i successivi*/
+#secondo-div p + p {
+    color:lightcoral;
+    font-size:45px;
+}
+/* il primo non è colorato perchè 
+non è fratello successivo di nessuno */
+
+/* se invece ho qualcosa nel mezzo tra i p ma invece che usare
+il + uso la tilde funzionerà lo stesso perchè grzie alla tilde vengono
+ selezionati tutti i p che ovviamente hanno prima un p
+e sono fratelli, questo perchè sono cmq nello stesso contenitore */
+
+
+#special-hover > div:first-child{
+    height:100px;
+    background-color: aquamarine;
+}
+
+#special-hover > div:last-child{
+    height:250px;
+    background-color: blue;
+}
+
+#special-hover > div:first-child:hover + div{
+    background-color: yellow;;
+}
